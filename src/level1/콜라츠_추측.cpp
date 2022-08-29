@@ -4,16 +4,16 @@
 using namespace std;
 
 int solution(int num) {
-    int answer = 1;
-
+    int answer = 0;
+    long long lNum = num;
     for(; answer < 500; ++answer){
-        if(num % 2 == 0){
-            num /= 2;
-        } else {
-            num = (num * 3) + 1;
-        }
-        if(1 == num){
+        if(1 == lNum){
             break;
+        }
+        if(lNum % 2 == 0){
+            lNum /= 2;
+        } else {
+            lNum = (lNum * 3) + 1;
         }
     }
     answer = answer == 500 ? -1 : answer;
@@ -21,6 +21,5 @@ int solution(int num) {
 }
 
 int main(){
-    solution(626331);
     return 0;
 }
