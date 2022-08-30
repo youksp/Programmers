@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(void) {
+int main() {
     int a;
     int b;
     cin >> a >> b;
@@ -13,8 +13,6 @@ int main(void) {
         }
         cout << endl;
     }
-    
-    
     
     return 0;
 }
