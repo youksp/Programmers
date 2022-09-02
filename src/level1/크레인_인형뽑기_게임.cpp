@@ -13,7 +13,6 @@ int solution(vector<vector<int>> board, vector<int> moves) {
         for(int j=0; j<max; j++){
             if(board[j][moves[i]-1] != 0){
                 barket.push_back(board[j][moves[i]-1]);
-                cout << barket.back() <<endl;
                 board[j][moves[i]-1] = 0;
 
                 if(barket.size() > 1){
